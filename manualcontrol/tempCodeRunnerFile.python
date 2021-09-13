@@ -1,0 +1,24 @@
+megaspeed = 0
+
+class Rover():
+    def __init__(self):
+        self.speed = 0
+
+    def update(self):
+        global megaspeed
+        print(self.speed, megaspeed)
+        megaspeed = self.speed
+        print(self.speed, megaspeed)
+
+class Inheritor():
+    def __init__(self, rover):
+        self.rover = rover
+    
+    def increase(self):
+        self.rover.speed = 5
+        self.rover.update()
+        print(self.rover.speed)
+    
+rover = Rover()
+inh = Inheritor(rover)
+inh.increase()
