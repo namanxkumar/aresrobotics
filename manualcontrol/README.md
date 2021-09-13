@@ -3,8 +3,8 @@ This is the manual keyboard control library for the rover.
 
 Current implementation allows for control of linear and transverse (left & right) speeds via arrow keys.
 
-- [ ] TODO: Implement rover arm (manipulator.py) control
-- [ ] TODO: Implement deceleration logic (mobility.py)
+- [ ] TODO: Implement rover arm control in [manipulator](manipulator.py)
+- [ ] TODO: Implement deceleration logic in [mobility](mobility.py)
 
 ### Descriptions
 - **[connector](connector.py):** Connects to the rover -- includes testing
